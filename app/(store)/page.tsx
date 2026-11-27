@@ -1,4 +1,18 @@
 import Banner from "../../components/ui/banner";
+import type { Metadata } from "next";
+
+const description =
+  "Wear the framework you ship with. Shop developer apparel, accessories, and everyday essentials.";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description,
+  openGraph: {
+    title: "Home | Swag Store",
+    description,
+    url: "/",
+  },
+};
 
 export default function HomePage() {
   return (

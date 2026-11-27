@@ -13,11 +13,17 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.SITE_URL ?? "http://localhost:3000"),
   title: {
     default: "Swag Store",
     template: "%s | Swag Store",
   },
   description: "Premium swag for developers who build with Vercel.",
+  openGraph: {
+    siteName: "Swag Store",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
